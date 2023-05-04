@@ -10,7 +10,17 @@ entity alu is
 end alu;
 
 architecture alubhv of alu is
-begin
+    component mux4x1
+    port (
+        i0: in std_logic_vector (31 downto 0);
+        i1: in std_logic_vector (31 downto 0);
+        i2: in std_logic_vector (31 downto 0);
+        i3: in std_logic_vector (31 downto 0);
+        s: in std_logic_vector(1 downto 0);
+        output: out std_logic_vector (31 downto 0)
+    );
+    end component;
 
+begin
 end alubhv;
 

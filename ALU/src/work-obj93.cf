@@ -1,9 +1,10 @@
 v 4
-file . "mux4x1_tb.vhdl" "6f5dcd9b14915372facff008a287f29dc3f48d4b" "20230504132338.435":
-  entity mux4x1_tb at 1( 0) + 0 on 51;
-  architecture behav of mux4x1_tb at 7( 80) + 0 on 52;
-file . "alu.vhdl" "7d74981f0031f9e139cd592733db51228620669d" "20230503202231.852":
-  entity alu at 1( 0) + 0 on 12;
 file . "mux4x1.vhdl" "2515a8c2daf0d07bccfb40e0cd262d9d0cc0ee48" "20230504125525.330":
   entity mux4x1 at 1( 0) + 0 on 13;
   architecture muxbhv of mux4x1 at 15( 375) + 0 on 14;
+file . "alu.vhdl" "04fd08b0f28b4e23d743d8409f49a56485f19777" "20230504142948.926":
+  entity alu at 1( 0) + 0 on 53;
+  architecture alubhv of alu at 12( 291) + 0 on 54;
+file . "mux4x1_tb.vhdl" "6f5dcd9b14915372facff008a287f29dc3f48d4b" "20230504132338.435":
+  entity mux4x1_tb at 1( 0) + 0 on 51;
+  architecture behav of mux4x1_tb at 7( 80) + 0 on 52;
