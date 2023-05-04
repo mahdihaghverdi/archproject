@@ -2,10 +2,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 --  A testbench has no ports.
-entity half_adder_tb is
-end half_adder_tb;
+entity full_adder_tb is
+end full_adder_tb;
 
-architecture behav of half_adder_tb is
+architecture behav of full_adder_tb is
     --  Declaration of the component that will be instantiated.
     function to_string ( a: std_logic_vector) return string is
     variable b : string (1 to a'length) := (others => NUL);
@@ -18,27 +18,27 @@ architecture behav of half_adder_tb is
     return b;
     end function;
 
-    component half_adder
+    component full_adder
         port (
-            a, b : in std_logic_vector (31 downto 0);
+            a, b, ci : in std_logic_vector (31 downto 0);
             s, c : out std_logic_vector (31 downto 0)
         );
     end component;
 
     --  Specifies which entity is bound with the component.
-    for half_adder_0: half_adder use entity work.half_adder;
-    signal a, b, s, c : std_logic_vector (31 downto 0);
+    for full_adder_0: full_adder use entity work.full_adder;
+    signal a, b, ci, s, c : std_logic_vector (31 downto 0);
 
 begin
     --  Component instantiation.
-    half_adder_0: half_adder port map (a => a, b => b, s => s, c => c);
+    full_adder_0: full_adder port map (a => a, b => b, ci => ci, s => s, c => c);
 
 --  This process does the real job.
 process
     type pattern_type is record
-        --  The inputs of the half_adder.
-        a, b : std_logic_vector (31 downto 0);
-        --  The expected outputs of the half_adder.
+        --  The inputs of the full_adder.
+        a, b, ci : std_logic_vector (31 downto 0);
+        --  The expected outputs of the full_adder.
         s, c : std_logic_vector (31 downto 0);
     end record;
 
@@ -47,22 +47,32 @@ process
     constant patterns : pattern_array :=
         (
             (
+                "00000100001110011000100011110101",
+                "00000100001110011000100110100110",
                 "00000000000000000000000000000000",
-                "00000000000000000000000000000000",
-                "00000000000000000000000000000000",
-                "00000000000000000000000000000000"
+                "00000000000000000000000101010011",
+                "00000100001110011000100010100100"
             ),
             (
-                "00000000000000000000000000000001",
-                "00000000000000000000000000000011",
-                "00000000000000000000000000000010",
-                "00000000000000000000000000000001"
+                "01000100001110011010100011110101",
+                "00111100001010111000000010100110",
+                "00110111101111000010101001010010",
+                "01001111101011100000001000000001",
+                "00110100001110011010100011110110"
             ),
             (
-                "00000010000011110001100101100000",
-                "00000111110000010100001100100111",
-                "00000101110011100101101001000111",
-                "00000010000000010000000100100000"
+                "11011100110111111011011011110100",
+                "11100110111001101110101011011101",
+                "10011110001001001010010111101110",
+                "10100100000111011111100111000111",
+                "11011110111001101010011011111100"
+            ),
+            (
+                "01101000011010011100000011001000",
+                "10010101010110100000010010000111",
+                "11100011010000100000110000001101",
+                "00011110011100011100100001000010",
+                "11100001010010100000010010001101"
             )
         );
 
@@ -72,6 +82,7 @@ begin
     --  Set the inputs.
     a <= patterns(i).a;
     b <= patterns(i).b;
+    ci <= patterns(i).ci;
     --  Wait for the results.
     wait for 1 ns;
         --  Check the outputs.
@@ -79,6 +90,7 @@ begin
                 report LF &
                 "a : " & to_string(a) & LF &
                 "b : " & to_string(b) & LF &
+                "ci : " & to_string(ci) & LF &
                 "s : " & to_string(s) & LF &
                 "c : " & to_string(c) & LF &
                 "Bad sum value";
@@ -86,6 +98,7 @@ begin
                 report LF &
                 "a : " & to_string(a) & LF &
                 "b : " & to_string(b) & LF &
+                "ci : " & to_string(ci) & LF &
                 "s : " & to_string(s) & LF &
                 "c : " & to_string(c) & LF &
                 "Bad carry out value";

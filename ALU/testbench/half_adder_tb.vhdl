@@ -27,11 +27,10 @@ architecture behav of half_adder_tb is
 
     --  Specifies which entity is bound with the component.
     for half_adder_0: half_adder use entity work.half_adder;
-    signal a, b, s, c : std_logic_vector (31 downto 0);
-
-begin
-    --  Component instantiation.
-    half_adder_0: half_adder port map (a => a, b => b, s => s, c => c);
+        signal a, b, s, c : std_logic_vector (31 downto 0);
+    begin
+        --  Component instantiation.
+        half_adder_0: half_adder port map (a => a, b => b, s => s, c => c);
 
 --  This process does the real job.
 process
@@ -54,15 +53,15 @@ process
             ),
             (
                 "00000000000000000000000000000001",
-                "00000000000000000000000000000011",
-                "00000000000000000000000000000010",
-                "00000000000000000000000000000001"
+                "00000000000000000000000000000000",
+                "00000000000000000000000000000001",
+                "00000000000000000000000000000000"
             ),
             (
-                "00000010000011110001100101100000",
-                "00000111110000010100001100100111",
-                "00000101110011100101101001000111",
-                "00000010000000010000000100100000"
+                "10000000000000000000000000000000",
+                "10000000000000000000000000000000",
+                "00000000000000000000000000000000",
+                "10000000000000000000000000000000"
             )
         );
 
