@@ -1,10 +1,13 @@
 v 4
-file . "full_adder_tb.vhdl" "a31d4358a616ceb65bfca66e62591f41777c69f7" "20230504185352.238":
-  entity full_adder_tb at 1( 0) + 0 on 27;
-  architecture behav of full_adder_tb at 8( 118) + 0 on 28;
-file . "half_adder.vhdl" "2f6f676730d8d8d4d5d3f41fca61128adfd7a6f1" "20230504181301.643":
-  entity half_adder at 1( 0) + 0 on 11;
-  architecture habhv of half_adder at 11( 200) + 0 on 12;
+file . "half_adder_tb.vhdl" "9f5fb384db6561592335bbb9a9bf7a0d4aa409c8" "20230504200740.604":
+  entity half_adder_tb at 1( 0) + 0 on 33;
+  architecture behav of half_adder_tb at 8( 118) + 0 on 34;
 file . "full_adder.vhdl" "751a6ad7df80f3a7f510f3bbc4ccafd97d70e1b4" "20230504181314.566":
   entity full_adder at 1( 0) + 0 on 13;
   architecture fadbhv of full_adder at 12( 205) + 0 on 14;
+file . "half_adder.vhdl" "2f6f676730d8d8d4d5d3f41fca61128adfd7a6f1" "20230504200728.949":
+  entity half_adder at 1( 0) + 0 on 31;
+  architecture habhv of half_adder at 11( 200) + 0 on 32;
+file . "full_adder_tb.vhdl" "1591620100709e8652841979be10989427c1251c" "20230504200228.373":
+  entity full_adder_tb at 1( 0) + 0 on 29;
+  architecture behav of full_adder_tb at 8( 118) + 0 on 30;
