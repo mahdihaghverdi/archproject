@@ -1,14 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 entity mux4x1 is
     port (
-        i0: in std_logic_vector (31 downto 0);
-        i1: in std_logic_vector (31 downto 0);
-        i2: in std_logic_vector (31 downto 0);
-        i3: in std_logic_vector (31 downto 0);
-        s: in std_logic_vector(1 downto 0);
-        output: out std_logic_vector (31 downto 0)
+        i0: in signed (31 downto 0);
+        i1: in signed (31 downto 0);
+        i2: in signed (31 downto 0);
+        i3: in signed (31 downto 0);
+        s: in std_logic_vector (1 downto 0);
+        output: out signed (31 downto 0)
     );
 end mux4x1;
 
