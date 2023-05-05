@@ -48,6 +48,8 @@ for idx, nums in enumerate(numbers):
 
 fmt = lambda x: f'{x[2:]:0>32}'
 
+print(calc("0b1", "0b1", "0b0"))
+
 for item in numbers:
     a, b, ci, s, c= item
 

@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 --  A testbench has no ports.
 entity full_adder_tb is
@@ -7,7 +8,7 @@ end full_adder_tb;
 
 architecture behav of full_adder_tb is
     --  Declaration of the component that will be instantiated.
-    function to_string ( a: std_logic_vector) return string is
+    function to_string ( a: signed) return string is
     variable b : string (1 to a'length) := (others => NUL);
     variable stri : integer := 1;
     begin
@@ -20,14 +21,14 @@ architecture behav of full_adder_tb is
 
     component full_adder
         port (
-            a, b, ci : in std_logic_vector (31 downto 0);
-            s, c : out std_logic_vector (31 downto 0)
+            a, b, ci : in signed (31 downto 0);
+            s, c : out signed (31 downto 0)
         );
     end component;
 
     --  Specifies which entity is bound with the component.
     for full_adder_0: full_adder use entity work.full_adder;
-    signal a, b, ci, s, c : std_logic_vector (31 downto 0);
+    signal a, b, ci, s, c : signed (31 downto 0);
 
 begin
     --  Component instantiation.
@@ -37,15 +38,22 @@ begin
 process
     type pattern_type is record
         --  The inputs of the full_adder.
-        a, b, ci : std_logic_vector (31 downto 0);
+        a, b, ci : signed (31 downto 0);
         --  The expected outputs of the full_adder.
-        s, c : std_logic_vector (31 downto 0);
+        s, c : signed (31 downto 0);
     end record;
 
 --  The patterns to apply.
     type pattern_array is array (natural range <>) of pattern_type;
     constant patterns : pattern_array :=
         (
+            (
+                "00000000000000000000000000000001",
+                "00000000000000000000000000000001",
+                "00000000000000000000000000000000",
+                "00000000000000000000000000000000",
+                "00000000000000000000000000000001"
+            ),
             (
                 "00000100001110011000100011110101",
                 "00000100001110011000100110100110",

@@ -1,0 +1,53 @@
+$date
+  Fri May  5 11:12:29 2023
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module full_adder $end
+$var reg 32 ! a[31:0] $end
+$var reg 32 " b[31:0] $end
+$var reg 32 # ci[31:0] $end
+$var reg 32 $ s[31:0] $end
+$var reg 32 % c[31:0] $end
+$var reg 32 & asb[31:0] $end
+$var reg 32 ' aab[31:0] $end
+$var reg 32 ( asbco[31:0] $end
+$scope module half_adder_0 $end
+$var reg 32 ) a[31:0] $end
+$var reg 32 * b[31:0] $end
+$var reg 32 + s[31:0] $end
+$var reg 32 , c[31:0] $end
+$upscope $end
+$scope module half_adder_1 $end
+$var reg 32 - a[31:0] $end
+$var reg 32 . b[31:0] $end
+$var reg 32 / s[31:0] $end
+$var reg 32 0 c[31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU !
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU "
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU #
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU $
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU %
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU &
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU '
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU (
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU )
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU *
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU +
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU ,
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU -
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU .
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU /
+bUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU 0
