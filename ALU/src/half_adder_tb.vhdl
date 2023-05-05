@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
 --  A testbench has no ports.
 entity half_adder_tb is
@@ -7,7 +8,7 @@ end half_adder_tb;
 
 architecture behav of half_adder_tb is
     --  Declaration of the component that will be instantiated.
-    function to_string ( a: std_logic_vector) return string is
+    function to_string ( a: signed) return string is
     variable b : string (1 to a'length) := (others => NUL);
     variable stri : integer := 1;
     begin
@@ -20,14 +21,14 @@ architecture behav of half_adder_tb is
 
     component half_adder
         port (
-            a, b : in std_logic_vector (31 downto 0);
-            s, c : out std_logic_vector (31 downto 0)
+            a, b : in signed (31 downto 0);
+            s, c : out signed (31 downto 0)
         );
     end component;
 
     --  Specifies which entity is bound with the component.
     for half_adder_0: half_adder use entity work.half_adder;
-    signal a, b, s, c : std_logic_vector (31 downto 0);
+    signal a, b, s, c : signed (31 downto 0);
 
 begin
     --  Component instantiation.
@@ -37,9 +38,9 @@ begin
 process
     type pattern_type is record
         --  The inputs of the half_adder.
-        a, b : std_logic_vector (31 downto 0);
+        a, b : signed (31 downto 0);
         --  The expected outputs of the half_adder.
-        s, c : std_logic_vector (31 downto 0);
+        s, c : signed (31 downto 0);
     end record;
 
 --  The patterns to apply.
