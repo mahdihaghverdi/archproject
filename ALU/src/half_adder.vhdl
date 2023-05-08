@@ -1,16 +1,15 @@
 library ieee;
-use ieee.numeric_std.all;
+use ieee.std_logic_1164.all;
 
 entity half_adder is
     port (
-        a, b : in signed (31 downto 0);
-        s, c : out signed (31 downto 0)
+        a, b : in std_logic;
+        sum, carry : out std_logic
     );
 end half_adder;
 
-architecture habhv of half_adder is
-
+architecture arch of half_adder is
 begin
-    s <= a xor b;
-    c <= a and b;
-end habhv;
+    sum <= a xor b;
+    carry <= a and b;
+end arch;
