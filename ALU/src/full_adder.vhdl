@@ -1,25 +1,27 @@
+-- one bit full adder
+
 library ieee;
-use ieee.numeric_std.all;
+use ieee.std_logic_1164.all;
 
 entity full_adder is
     port (
-        a, b, ci : in signed (31 downto 0);
-        s, c : out signed (31 downto 0)
+        a, b, ci : in std_logic;
+        s, c : out std_logic
     );
 end full_adder;
 
 
-architecture fadbhv of full_adder is
+architecture arch of full_adder is
     component half_adder
         port (
-            a, b : in signed (31 downto 0);
-            s, c : out signed (31 downto 0)
+            a, b : in std_logic;
+            sum, carry : out std_logic
         );
     end component;
 
     for half_adder_0: half_adder use entity work.half_adder;
     for half_adder_1: half_adder use entity work.half_adder;
-    signal asb, aab, asbco: signed (31 downto 0);
+    signal asb, aab, asbco: std_logic;
 
     -- Instantiation
 begin
@@ -27,15 +29,15 @@ begin
         -- entity-signal-name => local-signal-name
         a => a,
         b => b,
-        s => asb,
-        c => aab
+        sum => asb,
+        carry => aab
     );
     half_adder_1: half_adder port map(
         a => asb,
         b => ci,
-        s => s,
-        c => asbco
+        sum => s,
+        carry => asbco
     );
 
     c <= aab or asbco;
-end fadbhv;
+end arch;
