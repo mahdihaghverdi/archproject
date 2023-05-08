@@ -1,28 +1,28 @@
 v 4
-file . "half_adder_tb_process.vhdl" "5b2ce2cd6505093f8d0ee9bfd191540cc21a31df" "20230508161423.829":
-  entity half_adder_process_tb at 3( 30) + 0 on 91;
-  architecture tb of half_adder_process_tb at 10( 135) + 0 on 92;
-file . "alu_tb.vhdl" "86dd3f9663d7938a1c0cbb0ad99ed1c214d450b4" "20230506030721.680":
-  entity alu_tb at 1( 0) + 0 on 71;
-  architecture behav of alu_tb at 9( 130) + 0 on 72;
-file . "mux4x1.vhdl" "0d918d811de15b434d36785454f3322aaa217c6f" "20230505165727.649":
-  entity mux4x1 at 1( 0) + 0 on 63;
-  architecture muxbhv of mux4x1 at 16( 352) + 0 on 64;
-file . "full_adder_tb.vhdl" "1e54d4a87c105aba07de03c83fd2937c39bc5be0" "20230505164901.780":
-  entity full_adder_tb at 1( 0) + 0 on 61;
-  architecture behav of full_adder_tb at 9( 144) + 0 on 62;
-file . "half_adder.vhdl" "47f7dd2303718d8ba72ec20a5e96dd2b17e2164a" "20230508152156.057":
-  entity half_adder at 1( 0) + 0 on 81;
-  architecture arch of half_adder at 11( 164) + 0 on 82;
-file . "full_adder.vhdl" "8910862eb1684b813bb52ae6cebe9dcb4f9f8bbb" "20230505164854.191":
-  entity full_adder at 1( 0) + 0 on 59;
-  architecture fadbhv of full_adder at 12( 182) + 0 on 60;
-file . "half_adder_tb.vhdl" "21c495441db7fd82fed2817231081a9255b0ed59" "20230508161015.639":
-  entity half_adder_tb at 1( 0) + 0 on 89;
-  architecture tb of half_adder_tb at 8( 89) + 0 on 90;
-file . "alu.vhdl" "ff52bead64f2a2edde7c8956c300598cd838b0a8" "20230505170153.328":
-  entity alu at 1( 0) + 0 on 69;
-  architecture alubhv of alu at 14( 395) + 0 on 70;
+file . "fulladder/full_adder_tb.vhdl" "7eb474d5a72b819286a38d669139baf360aef9b3" "20230508164049.771":
+  entity full_adder_tb at 1( 0) + 0 on 101;
+  architecture tb of full_adder_tb at 8( 89) + 0 on 102;
+file . "halfadder/half_adder.vhdl" "47f7dd2303718d8ba72ec20a5e96dd2b17e2164a" "20230508164031.092":
+  entity half_adder at 1( 0) + 0 on 97;
+  architecture arch of half_adder at 11( 164) + 0 on 98;
 file . "mux4x1_tb.vhdl" "743be798f6629fd06f899751ccc4ab111931606b" "20230505165946.789":
   entity mux4x1_tb at 1( 0) + 0 on 67;
   architecture behav of mux4x1_tb at 8( 106) + 0 on 68;
+file . "alu.vhdl" "ff52bead64f2a2edde7c8956c300598cd838b0a8" "20230505170153.328":
+  entity alu at 1( 0) + 0 on 69;
+  architecture alubhv of alu at 14( 395) + 0 on 70;
+file . "half_adder_tb.vhdl" "21c495441db7fd82fed2817231081a9255b0ed59" "20230508161015.639":
+  entity half_adder_tb at 1( 0) + 0 on 89;
+  architecture tb of half_adder_tb at 8( 89) + 0 on 90;
+file . "mux4x1.vhdl" "0d918d811de15b434d36785454f3322aaa217c6f" "20230505165727.649":
+  entity mux4x1 at 1( 0) + 0 on 63;
+  architecture muxbhv of mux4x1 at 16( 352) + 0 on 64;
+file . "alu_tb.vhdl" "86dd3f9663d7938a1c0cbb0ad99ed1c214d450b4" "20230506030721.680":
+  entity alu_tb at 1( 0) + 0 on 71;
+  architecture behav of alu_tb at 9( 130) + 0 on 72;
+file . "half_adder_tb_process.vhdl" "5b2ce2cd6505093f8d0ee9bfd191540cc21a31df" "20230508161423.829":
+  entity half_adder_process_tb at 3( 30) + 0 on 91;
+  architecture tb of half_adder_process_tb at 10( 135) + 0 on 92;
+file . "fulladder/full_adder.vhdl" "6ed47d9fed735f5d8bcdc8a752b37e575fa23149" "20230508164036.801":
+  entity full_adder at 3( 23) + 0 on 99;
+  architecture arch of full_adder at 14( 186) + 0 on 100;
