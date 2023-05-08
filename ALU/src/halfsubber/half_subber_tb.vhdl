@@ -9,7 +9,7 @@ architecture tb of half_subber_tb is
     signal a, b : std_logic;  -- inputs
     signal diff, borrow : std_logic;  -- outputs
 begin
-    -- connecting testbench signals with half_adder.vhd
+    -- connecting testbench signals with half_subber.vhdl
     UUT : entity work.half_subber port map (
         a => a,
         b => b, diff => diff,

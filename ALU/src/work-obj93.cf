@@ -1,4 +1,10 @@
 v 4
+file . "fullsubber/full_subber_tb.vhdl" "e32197526f77920d7ec9a034fd7e740f35964534" "20230508180056.776":
+  entity full_subber_tb at 1( 0) + 0 on 115;
+  architecture tb of full_subber_tb at 8( 91) + 0 on 116;
+file . "halfsubber/half_subber_tb.vhdl" "3bae0394c70f1ff584880a7fd08854bab2897d1b" "20230508174634.749":
+  entity half_subber_tb at 1( 0) + 0 on 111;
+  architecture tb of half_subber_tb at 8( 91) + 0 on 112;
 file . "4bitfa/fbitfa_tb.vhdl" "51ea8c002e310832cb3a1673e8608d97f39104da" "20230508171852.455":
   entity fourbitfulladdertb at 1( 0) + 0 on 107;
   architecture tb of fourbitfulladdertb at 8( 99) + 0 on 108;
@@ -32,3 +38,9 @@ file . "halfadder/half_adder.vhdl" "47f7dd2303718d8ba72ec20a5e96dd2b17e2164a" "2
 file . "fulladder/full_adder_tb.vhdl" "7eb474d5a72b819286a38d669139baf360aef9b3" "20230508164049.771":
   entity full_adder_tb at 1( 0) + 0 on 101;
   architecture tb of full_adder_tb at 8( 89) + 0 on 102;
+file . "halfsubber/half_subber.vhdl" "7372b0543e8abbe2ecc3d17a6365f06330f58fa4" "20230508174614.218":
+  entity half_subber at 1( 0) + 0 on 109;
+  architecture arch of half_subber at 11( 166) + 0 on 110;
+file . "fullsubber/full_subber.vhdl" "e04ef14e00e3c900fb910bc1c28756630b7a4832" "20230508180043.743":
+  entity full_subber at 1( 0) + 0 on 113;
+  architecture arch of full_subber at 11( 178) + 0 on 114;
