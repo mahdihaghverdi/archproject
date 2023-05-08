@@ -5,7 +5,7 @@ entity full_subber is
     port(
         a , b, borrow_in: in std_logic;
         diff, borrow_out : out std_logic
-);
+    );
 end full_subber;
 
 architecture arch of full_subber is
