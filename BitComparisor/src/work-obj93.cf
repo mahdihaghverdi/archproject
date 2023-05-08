@@ -1,0 +1,13 @@
+v 4
+file . "multiplexerEx.vhd" "529856a66b41b2726ec45dbe298441e0f5d69a9b" "20230506031344.223":
+  entity multiplexerex at 1( 0) + 0 on 17;
+  architecture dataflow of multiplexerex at 11( 216) + 0 on 18;
+file . "comparator2Bit.vhd" "0590c69a35ff0e636250e6cabdd6f7e94262de9d" "20230506024714.060":
+  entity comparator2bit at 1( 0) + 0 on 13;
+  architecture dataflow2bit of comparator2bit at 11( 184) + 0 on 14;
+file . "comparator1Bit.vhdl" "8420a5ca58bc6eff33f1001ca6a1eccb6f46d08b" "20230506024648.101":
+  entity comparator1bit at 1( 0) + 0 on 11;
+  architecture dataflow1bit of comparator1bit at 11( 164) + 0 on 12;
+file . "comparator2BitStruct.vhd" "6fc42157ed9f3986c37ffa36dec678a0c225d796" "20230506024916.929":
+  entity comparator2bitstruct at 1( 0) + 0 on 15;
+  architecture structure of comparator2bitstruct at 11( 194) + 0 on 16;
