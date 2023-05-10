@@ -1,0 +1,70 @@
+$date
+  Wed May 10 11:11:10 2023
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module mux4x1_tb $end
+$var reg 4 ! i0[3:0] $end
+$var reg 4 " i1[3:0] $end
+$var reg 4 # i2[3:0] $end
+$var reg 4 $ i3[3:0] $end
+$var reg 4 % output[3:0] $end
+$var reg 2 & sel[1:0] $end
+$scope module uut $end
+$var reg 4 ' i0[3:0] $end
+$var reg 4 ( i1[3:0] $end
+$var reg 4 ) i2[3:0] $end
+$var reg 4 * i3[3:0] $end
+$var reg 2 + sel[1:0] $end
+$var reg 4 , output[3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000 !
+b0000 "
+b0000 #
+b0000 $
+b0000 %
+b00 &
+b0000 '
+b0000 (
+b0000 )
+b0000 *
+b00 +
+b0000 ,
+#20000000
+b0010 !
+b0101 "
+b0011 #
+b1010 $
+b0010 %
+b0010 '
+b0101 (
+b0011 )
+b1010 *
+b0010 ,
+#40000000
+b0101 %
+b01 &
+b01 +
+b0101 ,
+#60000000
+b0011 %
+b10 &
+b10 +
+b0011 ,
+#80000000
+b1010 %
+b11 &
+b11 +
+b1010 ,
+#100000000

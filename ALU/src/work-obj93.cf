@@ -1,19 +1,25 @@
 v 4
-file . "4bm/fbm_tb.vhdl" "68f08124551958cb81ad6ffa914619006db1df83" "20230510072206.171":
-  entity fourbitmultipliertb at 1( 0) + 0 on 33;
-  architecture tb of fourbitmultipliertb at 8( 101) + 0 on 34;
-file . "4bitfa/fbitfa.vhdl" "d6c6499d6e26885aef971fc032a8907b8dd6f4ce" "20230510065356.240":
-  entity fourbitfulladder at 1( 0) + 0 on 17;
-  architecture arch of fourbitfulladder at 12( 252) + 0 on 18;
-file . "halfadder/half_adder_tb.vhdl" "5e942e4a7d7d3c62ea023b3b9deeecab07c84428" "20230509183618.388":
-  entity half_adder_tb at 1( 0) + 0 on 13;
-  architecture tb of half_adder_tb at 8( 89) + 0 on 14;
-file . "halfadder/half_adder.vhdl" "47f7dd2303718d8ba72ec20a5e96dd2b17e2164a" "20230509183600.093":
-  entity half_adder at 1( 0) + 0 on 11;
-  architecture arch of half_adder at 11( 164) + 0 on 12;
-file . "fulladder/full_adder.vhdl" "6ed47d9fed735f5d8bcdc8a752b37e575fa23149" "20230510065347.859":
-  entity full_adder at 3( 23) + 0 on 15;
-  architecture arch of full_adder at 14( 186) + 0 on 16;
+file . "mux4x1/mux4x1.vhdl" "87676fd4ca0504b97e3b0e0724a278be64a45d97" "20230510073719.192":
+  entity mux4x1 at 1( 0) + 0 on 35;
+  architecture arch of mux4x1 at 12( 249) + 0 on 36;
 file . "4bm/fbm.vhdl" "647c1197ca4a0a67007dad2b45973af664fd467e" "20230510072150.002":
   entity fourbitmultiplier at 1( 0) + 0 on 31;
   architecture arch of fourbitmultiplier at 11( 225) + 0 on 32;
+file . "fulladder/full_adder.vhdl" "6ed47d9fed735f5d8bcdc8a752b37e575fa23149" "20230510065347.859":
+  entity full_adder at 3( 23) + 0 on 15;
+  architecture arch of full_adder at 14( 186) + 0 on 16;
+file . "halfadder/half_adder.vhdl" "47f7dd2303718d8ba72ec20a5e96dd2b17e2164a" "20230509183600.093":
+  entity half_adder at 1( 0) + 0 on 11;
+  architecture arch of half_adder at 11( 164) + 0 on 12;
+file . "halfadder/half_adder_tb.vhdl" "5e942e4a7d7d3c62ea023b3b9deeecab07c84428" "20230509183618.388":
+  entity half_adder_tb at 1( 0) + 0 on 13;
+  architecture tb of half_adder_tb at 8( 89) + 0 on 14;
+file . "4bitfa/fbitfa.vhdl" "d6c6499d6e26885aef971fc032a8907b8dd6f4ce" "20230510065356.240":
+  entity fourbitfulladder at 1( 0) + 0 on 17;
+  architecture arch of fourbitfulladder at 12( 252) + 0 on 18;
+file . "4bm/fbm_tb.vhdl" "68f08124551958cb81ad6ffa914619006db1df83" "20230510072206.171":
+  entity fourbitmultipliertb at 1( 0) + 0 on 33;
+  architecture tb of fourbitmultipliertb at 8( 101) + 0 on 34;
+file . "mux4x1/mux4x1_tb.vhdl" "84c51f65a908de21ddcc2ca549273b26048efbee" "20230510074107.416":
+  entity mux4x1_tb at 1( 0) + 0 on 39;
+  architecture arch of mux4x1_tb at 7( 80) + 0 on 40;
