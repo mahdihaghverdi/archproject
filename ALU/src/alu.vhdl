@@ -5,9 +5,9 @@ use ieee.numeric_std.all;
 entity alu is
     port (
         alu_input_a, alu_input_b: in signed (31 downto 0);  -- 32 bit input
-        alu_out: out signed (31 downto 0);    -- 32 bit output
-        alu_carryout: out signed (31 downto 0);     -- carry out
-        alu_select: in std_logic_vector (1 downto 0)     -- 2 bit select value
+        alu_out: out signed (31 downto 0);                  -- 32 bit output
+        alu_carryout: out signed (31 downto 0);             -- carry out
+        alu_select: in std_logic_vector (1 downto 0)        -- 2 bit select value
     );
 end alu;
 

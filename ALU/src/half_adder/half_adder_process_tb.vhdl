@@ -42,14 +42,6 @@ begin
             assert ((sum = '0') and (carry = '1'))
             report "test failed for input combination 11" severity error;
 
-            -- Fail test
-            a <= '0';
-            b <= '1';
-            wait for period;
-            assert ((sum = '0') and (carry = '1'))
-            report "test failed for input combination 01 (fail test)" severity error;
-
-
             wait; -- indefinitely suspend process
         end process;
 end tb;

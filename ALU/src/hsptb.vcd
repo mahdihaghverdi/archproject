@@ -1,0 +1,55 @@
+$date
+  Wed May 10 13:15:35 2023
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module half_subber_process_tb $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # diff $end
+$var reg 1 $ borrow $end
+$scope module uut $end
+$var reg 1 % a $end
+$var reg 1 & b $end
+$var reg 1 ' diff $end
+$var reg 1 ( borrow $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+#20000000
+1"
+1#
+1$
+1&
+1'
+1(
+#40000000
+1!
+0"
+0$
+1%
+0&
+0(
+#60000000
+1"
+0#
+1&
+0'
+#80000000
