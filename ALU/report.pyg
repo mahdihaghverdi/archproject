@@ -1,0 +1,8 @@
+^^I^^I^^I^^I^^I^^I
+^^I^^I^^I^^I^^I^^I# Note: $\pi=\lim_{n\to\infty}\frac{P_n}{d}$
+^^I^^I^^I^^I^^I^^Ititle = "Hello World"
+^^I^^I^^I^^I^^I^^I
+^^I^^I^^I^^I^^I^^Isum = 0
+^^I^^I^^I^^I^^I^^Ifor i in range(10):
+^^I^^I^^I^^I^^I^^Isum += i
+^^I^^I^^I^^I^^I^^I
