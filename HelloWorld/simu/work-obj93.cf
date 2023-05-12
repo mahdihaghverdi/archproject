@@ -1,4 +1,0 @@
-v 4
-file "/home/mahdi/Documents/VHDL/HelloWorld/" "src/helloworld.vhdl" "ac22b949b9f710ad5a326fc76d28f3edda5884b3" "20230501211749.928":
-  entity helloworld at 2( 25) + 0 on 4;
-  architecture behaviour of helloworld at 8( 173) + 0 on 4;
